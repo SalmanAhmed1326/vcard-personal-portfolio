@@ -165,6 +165,8 @@ body { background: var(--smoky-black); }
   #REUSED STYLE
 \*-----------------------------------*/
 
+
+
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -307,12 +309,102 @@ main {
 }
 
 
+h5 {
+  color: #ffffff; /* White color for visibility in dark mode */
+  font-size: 1.1rem; /* Adjust size if needed */
+  margin: 0.5rem 0; /* Optional: Add spacing for better readability */
+}
 
 
 
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
+
+
+/* General Styles for Sidebar */
+.sidebar {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 15px;
+}
+
+/* Contact Items */
+.contacts-list .contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.contact-data {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  color: #ffd700;
+  text-decoration: none;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.copy-btn.small-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn.small-btn:hover {
+  color: #ffd700; /* Gold highlight */
+}
+
+/* Social Icons */
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-item {
+  position: relative;
+  list-style: none;
+}
+
+.social-link {
+  font-size: 24px;
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #ffd700; /* Highlight on hover */
+}
+
+.social-item[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  top: -30px;
+  white-space: nowrap;
+}
+
+
 
 .sidebar {
   margin-bottom: 15px;
@@ -832,7 +924,59 @@ main {
 
 /**
  * skills 
+
  */
+
+/* General styles for the skills section */
+.skill {
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background */
+  color: #f5f5f5; /* Light text color */
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.skills-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #fff; /* Bright white for titles */
+}
+
+/* Style for the skills list */
+.skills-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.skills-item {
+  margin-bottom: 20px;
+}
+
+.title-wrapper h5 {
+  font-size: 18px;
+  color: #ffd700; /* Gold color for subheadings */
+  margin-bottom: 10px;
+}
+
+/* Styled list within each skill item */
+.styled-list {
+  list-style-type: disc; /* Add bullet points */
+  margin-left: 20px;
+  color: #f0f0f0; /* Slightly lighter color for list items */
+}
+
+.styled-list li {
+  margin-bottom: 8px; /* Add spacing between list items */
+}
+
+/* Hover effects */
+.skills-item:hover {
+  background-color: #2e2e2e; /* Slightly lighter dark background */
+  padding: 10px;
+  border-radius: 8px;
+}
+
 
 .skills-title { margin-bottom: 20px; }
 
